@@ -1,133 +1,296 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chandrashekar | Backend Developer</title>
+    <title>Bonthu Chandrashekar | Backend Developer</title>
+
     <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
 
-<!-- Navbar -->
-<header class="navbar">
-    <h1 class="logo">Chandrashekar</h1>
-    <nav>
-        <a href="#education">Education</a>
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#skills">Skills</a>
-        <a href="#contact">Contact</a>
-    </nav>
-</header>
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="logo">Chandrashekar</div>
 
-<!-- Hero Section -->
-<section class="hero">
-    <div class="hero-content">
-        <h2>Hello, I'm <span>Chandrashekar</span></h2>
-        <h3>Backend Developer 🚀</h3>
-        <p>I build scalable backend systems, APIs, and modern web apps.</p>
-        <div class="hero-buttons">
-            <button onclick="scrollToSection('projects')">View Projects</button>
-            <button class="outline" onclick="scrollToSection('contact')">Contact Me</button>
-        </div>
-    </div>
-</section>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#achievements">Achievements</a>
+            <a href="#education">Education</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
 
-<!-- Education -->
-<section id="education" class="section">
-    <h2 class="section-title">Education</h2>
-    <div class="card">
-        <p><strong>B.Tech - CSE</strong><br>MRCET (2022-2026)<br>CGPA: 7.55</p><br>
-        <p><strong>Intermediate</strong><br>Alphores Junior College (2020-2022)<br>88.2%</p><br>
-        <p><strong>SSC</strong><br>T.S Model School (2019-2020)<br>CGPA: 8.3</p><br>
-    </div>
-</section>
+    <!-- Hero -->
+    <section class="hero">
 
-<!-- About -->
-<section id="about" class="section dark">
-    <h2 class="section-title">About Me</h2>
-    <p class="center">
-        Passionate backend developer focused on building APIs, scalable systems,
-        and real-world applications. Always learning and improving 🚀
-    </p>
-    <p class="center">
-        My Interests: Exploring new things, Watching Devotional movies/series.
-    </p>
-</section>
+        <div class="hero-content">
 
-<!-- Projects -->
-<section id="projects" class="section">
-    <h2 class="section-title">Projects</h2>
+            <p class="hero-tag">Backend Developer • Node.js • Express.js • MongoDB</p>
 
-    <div class="grid">
-        <div class="card hover">
-            <h3>Secure Voting System</h3>
-            <ul>
-                <li>JWT Authentication</li>
-                <li>Secure Login System</li>
-                <li>MongoDB with Encryption</li>
-                <li>One User One Vote</li>
-            </ul>
-            <a href="https://github.com/chandrashekar271004/Secure-Voting-System-using-JWT-Authentication.git" target="_blank">View Project →</a>
+            <h1>
+                Hi, I'm
+                <span>Bonthu Chandrashekar</span>
+            </h1>
+
+            <h2 id="typing"></h2>
+
+            <p class="hero-description">
+                Backend Developer fresher skilled in building scalable REST APIs,
+                authentication systems, and production-style backend applications
+                using Node.js, Express.js, and MongoDB.
+            </p>
+
+            <div class="hero-buttons">
+                <button onclick="scrollToSection('projects')">
+                    View Projects
+                </button>
+
+                <a href="mailto:chandrashekar271004@gmail.com">
+                    <button class="outline">
+                        Hire Me
+                    </button>
+                </a>
+            </div>
+
         </div>
 
-        <div class="card hover">
-            <h3>E-Commerce Website</h3>
-            <ul>
-                <li>Authentication System</li>
-                <li>Backend APIs</li>
-                <li>MongoDB Integration</li>
-                <li>Cart & Orders</li>
-            </ul>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section">
+
+        <h2 class="section-title">About Me</h2>
+
+        <div class="card about-card">
+
+            <p>
+                I am a backend developer passionate about building scalable and secure backend systems.
+                I specialize in Node.js, Express.js, MongoDB, REST APIs, JWT authentication,
+                RBAC, middleware, validation, and cloud deployment.
+            </p>
+
+            <p>
+                I enjoy designing production-style backend architectures using MVC patterns,
+                centralized error handling, modular APIs, and secure authentication systems.
+            </p>
+
         </div>
-    </div>
-</section>
 
-<!-- Skills -->
-<section id="skills" class="section dark">
-    <h2 class="section-title">Skills</h2>
+    </section>
 
-    <div class="grid skills">
-        <div class="card"><h3>Languages</h3><p>Python, Java, C++, JavaScript</p></div>
-        <div class="card"><h3>Frameworks</h3><p>Django, Node.js, React</p></div>
-        <div class="card"><h3>Database</h3><p>MySQL, MongoDB</p></div>
-        <div class="card"><h3>Tools</h3><p>Git, Docker</p></div>
-    </div>
-</section>
+    <!-- Skills -->
+    <section id="skills" class="section dark">
 
-<!-- Contact -->
-<section id="contact" class="section">
-    <h2 class="section-title">Contact</h2>
+        <h2 class="section-title">Technical Skills</h2>
 
-    <div class="card center contact-box">
+        <div class="grid skills-grid">
 
-        <p>
-            📞 <span class="label">Phone:</span>
-            <a href="tel:+919121405966">+91 9121405966</a>
-        </p>
+            <div class="card">
+                <h3>Languages</h3>
+                <p>JavaScript, Python</p>
+            </div>
 
-        <p>
-            📧 <span class="label">Email:</span>
-            <a href="mailto:chandrashekar271004@gmail.com">
-                chandrashekar271004@gmail.com
-            </a>
-        </p>
+            <div class="card">
+                <h3>Backend</h3>
+                <p>Node.js, Express.js, REST APIs, JWT Authentication, RBAC</p>
+            </div>
 
-        <p>
-            💻 <span class="label">GitHub:</span>
-            <a href="https://github.com/chandrashekar271004" target="_blank">
-                github.com/chandrashekar271004
-            </a>
-        </p>
+            <div class="card">
+                <h3>Databases</h3>
+                <p>MongoDB, MySQL</p>
+            </div>
 
-    </div>
-</section>
+            <div class="card">
+                <h3>Tools & Platforms</h3>
+                <p>Git, GitHub, Postman, Swagger, Docker, Render, MongoDB Atlas</p>
+            </div>
 
-<!-- Footer -->
-<footer>
-    <p>© 2026 Chandrashekar | Built with ❤️</p>
-</footer>
+            <div class="card">
+                <h3>CS Fundamentals</h3>
+                <p>DSA, OOP, DBMS, Operating Systems, Computer Networks</p>
+            </div>
 
-<script src="script.js"></script>
+        </div>
+
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="section">
+
+        <h2 class="section-title">Projects</h2>
+
+        <div class="grid">
+
+            <!-- Ecommerce -->
+            <div class="card project-card">
+
+                <h3>E-Commerce Backend System</h3>
+
+                <p class="tech-stack">
+                    Node.js • Express.js • MongoDB • JWT
+                </p>
+
+                <ul>
+                    <li>Built scalable RESTful APIs for authentication, cart, products, and orders.</li>
+                    <li>Implemented JWT authentication and role-based authorization.</li>
+                    <li>Added filtering, pagination, stock management, and validation.</li>
+                    <li>Designed production-style MVC backend architecture.</li>
+                    <li>Integrated MongoDB Atlas and deployed on Render.</li>
+                    <li>Documented APIs using Swagger and Postman.</li>
+                </ul>
+
+                <div class="project-links">
+
+                    <a href="https://github.com/chandrashekar271004"
+                        target="_blank">
+                        GitHub
+                    </a>
+
+                    <a href="https://ecommerce-backend-q0jj.onrender.com"
+                        target="_blank">
+                        Live API
+                    </a>
+
+                </div>
+
+            </div>
+
+            <!-- Voting System -->
+            <div class="card project-card">
+
+                <h3>Secure Voting System</h3>
+
+                <p class="tech-stack">
+                    MERN Stack • JWT Authentication
+                </p>
+
+                <ul>
+                    <li>Built secure full-stack voting platform.</li>
+                    <li>Implemented one-user-one-vote logic.</li>
+                    <li>Developed protected backend APIs with RBAC.</li>
+                    <li>Integrated analytics and result visualization.</li>
+                </ul>
+
+                <div class="project-links">
+
+                    <a href="https://github.com/chandrashekar271004/Secure-Voting-System-using-JWT-Authentication.git"
+                        target="_blank">
+                        GitHub
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Achievements -->
+    <section id="achievements" class="section dark">
+
+        <h2 class="section-title">Achievements</h2>
+
+        <div class="grid">
+
+            <div class="card">
+                <h3>100+ DSA Problems</h3>
+                <p>
+                    Solved problems on arrays, linked lists,
+                    stacks, queues, recursion, and hashing.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>15+ REST APIs</h3>
+                <p>
+                    Developed real-world backend APIs with
+                    authentication and authorization.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Hackathons & Coding Contests</h3>
+                <p>
+                    Participated in technical competitions
+                    and collaborative coding events.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Education -->
+    <section id="education" class="section">
+
+        <h2 class="section-title">Education</h2>
+
+        <div class="card education-card">
+
+            <h3>B.Tech in Computer Science Engineering</h3>
+
+            <p>MRCET, Hyderabad</p>
+
+            <p>2022 - 2026</p>
+
+            <p>CGPA: 7.54</p>
+
+        </div>
+
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section dark">
+
+        <h2 class="section-title">Contact</h2>
+
+        <div class="card contact-card">
+
+            <p>📍 Hyderabad, Telangana</p>
+
+            <p>
+                📧
+                <a href="mailto:chandrashekar271004@gmail.com">
+                    chandrashekar271004@gmail.com
+                </a>
+            </p>
+
+            <p>
+                📞
+                <a href="tel:+919121405966">
+                    +91 9121405966
+                </a>
+            </p>
+
+            <p>
+                💻
+                <a href="https://github.com/chandrashekar271004"
+                    target="_blank">
+                    GitHub Profile
+                </a>
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 Bonthu Chandrashekar • Backend Developer</p>
+    </footer>
+
+    <script src="script.js"></script>
+
 </body>
+
 </html>
