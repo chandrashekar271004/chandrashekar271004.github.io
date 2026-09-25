@@ -4,290 +4,914 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="Bonthu Chandrashekar - Backend Developer specializing in Node.js, TypeScript, Python, REST APIs, Microservices and Distributed Systems.">
+
+    <meta name="keywords"
+        content="Chandrashekar Bonthu, Backend Developer, Node.js Developer, SDE 1, Express.js, FastAPI, Microservices, PostgreSQL, MongoDB">
+
+    <meta name="author" content="Bonthu Chandrashekar">
+
     <title>Bonthu Chandrashekar | Backend Developer</title>
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="data:,">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
         rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <!-- Navbar -->
-    <header class="navbar">
-        <div class="logo">Chandrashekar</div>
+    <!-- ==================== NAVBAR ==================== -->
 
-        <nav>
+    <header class="navbar">
+
+        <a href="#home" class="logo">
+            Chandrashekar<span>.</span>
+        </a>
+
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">
+            ☰
+        </button>
+
+        <nav id="navMenu">
+
+            <a href="#home">Home</a>
             <a href="#about">About</a>
             <a href="#skills">Skills</a>
             <a href="#projects">Projects</a>
-            <a href="#achievements">Achievements</a>
             <a href="#education">Education</a>
             <a href="#contact">Contact</a>
+
         </nav>
+
     </header>
 
-    <!-- Hero -->
-    <section class="hero">
 
-        <div class="hero-content">
+    <!-- ==================== HERO ==================== -->
 
-            <p class="hero-tag">Backend Developer • Node.js • Express.js • MongoDB</p>
+    <main>
 
-            <h1>
-                Hi, I'm
-                <span>Bonthu Chandrashekar</span>
-            </h1>
+        <section id="home" class="hero">
 
-            <h2 id="typing"></h2>
+            <div class="hero-content">
 
-            <p class="hero-description">
-                Backend Developer fresher skilled in building scalable REST APIs,
-                authentication systems, and production-style backend applications
-                using Node.js, Express.js, and MongoDB.
-            </p>
+                <div class="status-badge">
+                    <span class="status-dot"></span>
+                    Open to Backend Opportunities
+                </div>
 
-            <div class="hero-buttons">
-                <button onclick="scrollToSection('projects')">
-                    View Projects
+                <p class="hero-tag">
+                    BACKEND DEVELOPER • NODE.JS • TYPESCRIPT • PYTHON
+                </p>
+
+                <h1>
+                    Hi, I'm
+                    <span class="gradient-text">
+                        Bonthu Chandrashekar
+                    </span>
+                </h1>
+
+                <h2 id="typing"></h2>
+
+                <p class="hero-description">
+                    Computer Science graduate focused on building secure,
+                    scalable, and production-style backend systems using
+                    Node.js, Express.js, TypeScript, Python, PostgreSQL,
+                    MongoDB, Redis, and modern distributed-system patterns.
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a href="#projects" class="btn primary-btn">
+                        View Projects
+                    </a>
+
+                    <a href="mailto:chandrashekar271004@gmail.com"
+                        class="btn secondary-btn">
+                        Contact Me
+                    </a>
+
+                </div>
+
+                <div class="hero-links">
+
+                    <a href="https://github.com/chandrashekar271004"
+                        target="_blank"
+                        rel="noopener noreferrer">
+                        GitHub ↗
+                    </a>
+
+                    <a href="https://www.linkedin.com/in/chandrashekar-bonthu-483546409/"
+                        target="_blank"
+                        rel="noopener noreferrer">
+                        LinkedIn ↗
+                    </a>
+
+                    <a href="mailto:chandrashekar271004@gmail.com">
+                        Email ↗
+                    </a>
+                    <a href="assets/Chandrashekar_Bonthu_Backend_Resume.pdf"
+                        target="_blank"
+                        class="btn secondary-btn">
+                            View Resume
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ==================== ABOUT ==================== -->
+
+        <section id="about" class="section">
+
+            <div class="section-heading">
+                <p class="section-label">ABOUT ME</p>
+                <h2>Backend Engineering Focus</h2>
+            </div>
+
+            <div class="about-grid">
+
+                <div class="about-content">
+
+                    <p>
+                        I am a Computer Science graduate focused on backend
+                        development and software engineering. I enjoy designing
+                        APIs, database-backed systems, authentication flows,
+                        asynchronous processing, and distributed architectures.
+                    </p>
+
+                    <p>
+                        My projects cover telemedicine, microservices,
+                        real-time project management, e-commerce,
+                        invoicing, and document vectorisation.
+                    </p>
+
+                    <p>
+                        I focus on writing modular backend code with strong
+                        validation, authorization, error handling, testing,
+                        documentation, observability, and deployment practices.
+                    </p>
+
+                </div>
+
+                <div class="about-stats">
+
+                    <div class="stat-card">
+                        <strong>200+</strong>
+                        <span>DSA Problems</span>
+                    </div>
+
+                    <div class="stat-card">
+                        <strong>5</strong>
+                        <span>Backend Projects</span>
+                    </div>
+
+                    <div class="stat-card">
+                        <strong>REST</strong>
+                        <span>API Development</span>
+                    </div>
+
+                    <div class="stat-card">
+                        <strong>Cloud</strong>
+                        <span>Deployment Experience</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ==================== SKILLS ==================== -->
+
+        <section id="skills" class="section dark">
+
+            <div class="section-heading">
+                <p class="section-label">TECH STACK</p>
+                <h2>Technical Skills</h2>
+            </div>
+
+            <div class="skills-grid">
+
+                <div class="skill-card reveal">
+
+                    <div class="skill-icon">JS</div>
+
+                    <h3>Languages</h3>
+
+                    <p>
+                        JavaScript, TypeScript, Python, SQL
+                    </p>
+
+                </div>
+
+
+                <div class="skill-card reveal">
+
+                    <div class="skill-icon">API</div>
+
+                    <h3>Backend</h3>
+
+                    <p>
+                        Node.js, Express.js, FastAPI, REST APIs,
+                        JWT, RBAC, Middleware, API Validation
+                    </p>
+
+                </div>
+
+
+                <div class="skill-card reveal">
+
+                    <div class="skill-icon">DB</div>
+
+                    <h3>Databases</h3>
+
+                    <p>
+                        PostgreSQL, MongoDB, MySQL,
+                        Prisma, Mongoose
+                    </p>
+
+                </div>
+
+
+                <div class="skill-card reveal">
+
+                    <div class="skill-icon">DS</div>
+
+                    <h3>Distributed Systems</h3>
+
+                    <p>
+                        Microservices, API Gateway, NATS JetStream,
+                        Event-Driven Architecture, Outbox Pattern,
+                        Idempotency, Retries
+                    </p>
+
+                </div>
+
+
+                <div class="skill-card reveal">
+
+                    <div class="skill-icon">ASY</div>
+
+                    <h3>Async & Jobs</h3>
+
+                    <p>
+                        Redis, BullMQ, node-cron,
+                        Background Processing
+                    </p>
+
+                </div>
+
+
+                <div class="skill-card reveal">
+
+                    <div class="skill-icon">DEV</div>
+
+                    <h3>DevOps & Observability</h3>
+
+                    <p>
+                        Docker, Docker Compose, GitHub Actions,
+                        AWS, Render, Prometheus,
+                        OpenTelemetry, Jaeger
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ==================== PROJECTS ==================== -->
+
+        <section id="projects" class="section">
+
+            <div class="section-heading">
+
+                <p class="section-label">SELECTED WORK</p>
+
+                <h2>Projects</h2>
+
+                <p class="section-description">
+                    Backend systems and full-stack applications demonstrating
+                    API design, distributed systems, security, databases,
+                    asynchronous processing, and deployment.
+                </p>
+
+            </div>
+
+
+            <!-- Project Filters -->
+
+            <div class="project-filters">
+
+                <button class="filter-btn active" data-filter="all">
+                    All
                 </button>
 
-                <a href="mailto:chandrashekar271004@gmail.com">
-                    <button class="outline">
-                        Hire Me
-                    </button>
-                </a>
+                <button class="filter-btn" data-filter="backend">
+                    Backend
+                </button>
+
+                <button class="filter-btn" data-filter="distributed">
+                    Distributed
+                </button>
+
+                <button class="filter-btn" data-filter="fullstack">
+                    Full Stack
+                </button>
+
+                <button class="filter-btn" data-filter="python">
+                    Python
+                </button>
+
             </div>
 
-        </div>
 
-    </section>
+            <div class="projects-grid">
 
-    <!-- About -->
-    <section id="about" class="section">
 
-        <h2 class="section-title">About Me</h2>
+                <!-- AMRUTAM -->
 
-        <div class="card about-card">
+                <article class="project-card reveal"
+                    data-category="backend distributed">
 
-            <p>
-                I am a backend developer passionate about building scalable and secure backend systems.
-                I specialize in Node.js, Express.js, MongoDB, REST APIs, JWT authentication,
-                RBAC, middleware, validation, and cloud deployment.
-            </p>
+                    <div class="project-header">
 
-            <p>
-                I enjoy designing production-style backend architectures using MVC patterns,
-                centralized error handling, modular APIs, and secure authentication systems.
-            </p>
+                        <span class="project-number">
+                            01
+                        </span>
 
-        </div>
+                        <span class="project-type">
+                            BACKEND
+                        </span>
 
-    </section>
+                    </div>
 
-    <!-- Skills -->
-    <section id="skills" class="section dark">
+                    <h3>
+                        Amrutam Telemedicine Backend
+                    </h3>
 
-        <h2 class="section-title">Technical Skills</h2>
+                    <p class="project-description">
+                        Production-oriented backend for authentication,
+                        doctor availability, consultation booking,
+                        prescriptions, audit trails, and administration.
+                    </p>
 
-        <div class="grid skills-grid">
+                    <div class="project-highlights">
 
-            <div class="card">
-                <h3>Languages</h3>
-                <p>JavaScript, Python</p>
+                        <span>JWT / RBAC</span>
+                        <span>TOTP MFA</span>
+                        <span>Redis</span>
+                        <span>BullMQ</span>
+                        <span>PostgreSQL</span>
+                        <span>Prisma</span>
+                        <span>OpenTelemetry</span>
+                        <span>Docker</span>
+
+                    </div>
+
+                    <ul>
+
+                        <li>
+                            Implemented concurrency-safe consultation
+                            booking and idempotent writes.
+                        </li>
+
+                        <li>
+                            Added Redis/BullMQ background processing,
+                            automated tests, metrics, tracing and CI.
+                        </li>
+
+                    </ul>
+
+                    <div class="project-links">
+
+                        <a href="https://github.com/chandrashekar271004/amrutam-telemedicine-backend"
+                            target="_blank"
+                            rel="noopener noreferrer">
+                            GitHub ↗
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+                <!-- MICROSERVICES -->
+
+                <article class="project-card reveal"
+                    data-category="backend distributed">
+
+                    <div class="project-header">
+
+                        <span class="project-number">
+                            02
+                        </span>
+
+                        <span class="project-type">
+                            DISTRIBUTED
+                        </span>
+
+                    </div>
+
+                    <h3>
+                        Microservices User & Notification System
+                    </h3>
+
+                    <p class="project-description">
+                        Event-driven microservices architecture consisting
+                        of an API Gateway, User Service, and Notification
+                        Service.
+                    </p>
+
+                    <div class="project-highlights">
+
+                        <span>Node.js</span>
+                        <span>MongoDB</span>
+                        <span>NATS JetStream</span>
+                        <span>Docker</span>
+                        <span>JWT</span>
+                        <span>Outbox</span>
+
+                    </div>
+
+                    <ul>
+
+                        <li>
+                            Implemented asynchronous event communication
+                            using NATS JetStream.
+                        </li>
+
+                        <li>
+                            Added Outbox pattern, durable consumers,
+                            acknowledgements, retries and idempotent
+                            event processing.
+                        </li>
+
+                    </ul>
+
+                    <div class="project-links">
+
+                        <a href="https://github.com/chandrashekar271004/microservices-user-notification-system"
+                            target="_blank"
+                            rel="noopener noreferrer">
+                            GitHub ↗
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+                <!-- VELOZITY -->
+
+                <article class="project-card reveal"
+                    data-category="backend distributed fullstack">
+
+                    <div class="project-header">
+
+                        <span class="project-number">
+                            03
+                        </span>
+
+                        <span class="project-type">
+                            REAL-TIME
+                        </span>
+
+                    </div>
+
+                    <h3>
+                        Real-Time Client Project Dashboard
+                    </h3>
+
+                    <p class="project-description">
+                        Role-based project management platform with
+                        real-time notifications and activity updates.
+                    </p>
+
+                    <div class="project-highlights">
+
+                        <span>Node.js</span>
+                        <span>TypeScript</span>
+                        <span>PostgreSQL</span>
+                        <span>Prisma</span>
+                        <span>Socket.IO</span>
+                        <span>React</span>
+
+                    </div>
+
+                    <ul>
+
+                        <li>
+                            Built Admin, Project Manager and Developer
+                            workflows with server-side authorization.
+                        </li>
+
+                        <li>
+                            Implemented refresh-token rotation,
+                            HttpOnly cookies and missed-event recovery.
+                        </li>
+
+                    </ul>
+
+                    <div class="project-links">
+
+                        <a href="https://github.com/chandrashekar271004/velozity-realtime-project-dashboard"
+                            target="_blank"
+                            rel="noopener noreferrer">
+                            GitHub ↗
+                        </a>
+
+                        <a href="https://velozity-dashboard-hazel.vercel.app/"
+                            target="_blank"
+                            rel="noopener noreferrer">
+                            Live Demo ↗
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+                <!-- PYTHON -->
+
+                <article class="project-card reveal"
+                    data-category="python backend">
+
+                    <div class="project-header">
+
+                        <span class="project-number">
+                            04
+                        </span>
+
+                        <span class="project-type">
+                            PYTHON
+                        </span>
+
+                    </div>
+
+                    <h3>
+                        PDF Vectorisation Pipeline
+                    </h3>
+
+                    <p class="project-description">
+                        Document ingestion and semantic retrieval API
+                        built with Python and FastAPI.
+                    </p>
+
+                    <div class="project-highlights">
+
+                        <span>Python</span>
+                        <span>FastAPI</span>
+                        <span>PyMuPDF</span>
+                        <span>Sentence Transformers</span>
+                        <span>ChromaDB</span>
+
+                    </div>
+
+                    <ul>
+
+                        <li>
+                            Extracted PDF text, created overlapping
+                            chunks and generated embeddings using
+                            Sentence Transformers.
+                        </li>
+
+                        <li>
+                            Implemented semantic retrieval returning
+                            relevant raw document chunks without
+                            LLM-generated answers.
+                        </li>
+
+                    </ul>
+
+                    <div class="project-links">
+
+                        <a href="https://github.com/chandrashekar271004/Chandrashekar_Nestack_Submission"
+                            target="_blank"
+                            rel="noopener noreferrer">
+                            GitHub ↗
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+                <!-- ECOMMERCE -->
+
+                <article class="project-card reveal"
+                    data-category="backend">
+
+                    <div class="project-header">
+
+                        <span class="project-number">
+                            05
+                        </span>
+
+                        <span class="project-type">
+                            BACKEND
+                        </span>
+
+                    </div>
+
+                    <h3>
+                        E-Commerce Backend API
+                    </h3>
+
+                    <p class="project-description">
+                        REST API backend for authentication, products,
+                        carts, orders, stock validation and administration.
+                    </p>
+
+                    <div class="project-highlights">
+
+                        <span>Node.js</span>
+                        <span>Express.js</span>
+                        <span>MongoDB</span>
+                        <span>JWT</span>
+                        <span>RBAC</span>
+                        <span>Swagger</span>
+
+                    </div>
+
+                    <ul>
+
+                        <li>
+                            Developed 15+ REST APIs with authentication,
+                            authorization and stock management.
+                        </li>
+
+                        <li>
+                            Added validation, pagination, filtering,
+                            centralized error handling and API documentation.
+                        </li>
+
+                    </ul>
+
+                    <div class="project-links">
+
+                        <a href="https://github.com/chandrashekar271004/ecommerce-backend-api"
+                            target="_blank"
+                            rel="noopener noreferrer">
+                            GitHub ↗
+                        </a>
+
+                        <a href="https://ecommerce-backend-q0jj.onrender.com"
+                            target="_blank"
+                            rel="noopener noreferrer">
+                            Live API ↗
+                        </a>
+
+                        <a href="https://ecommerce-backend-q0jj.onrender.com/api/docs"
+                            target="_blank"
+                            rel="noopener noreferrer">
+                            Swagger ↗
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+                <!-- INVOICING -->
+
+                <article class="project-card reveal"
+                    data-category="fullstack backend">
+
+                    <div class="project-header">
+
+                        <span class="project-number">
+                            06
+                        </span>
+
+                        <span class="project-type">
+                            FULL STACK
+                        </span>
+
+                    </div>
+
+                    <h3>
+                        Modern Invoicing System
+                    </h3>
+
+                    <p class="project-description">
+                        Full-stack invoicing platform with secure
+                        user-scoped data access and invoice workflows.
+                    </p>
+
+                    <div class="project-highlights">
+
+                        <span>React</span>
+                        <span>Node.js</span>
+                        <span>Express.js</span>
+                        <span>MongoDB</span>
+                        <span>JWT</span>
+                        <span>Sharp</span>
+
+                    </div>
+
+                    <ul>
+
+                        <li>
+                            Implemented client and invoice CRUD,
+                            status workflows, filtering and automatic
+                            financial calculations.
+                        </li>
+
+                        <li>
+                            Added authorization, validation, image upload
+                            and processing using Multer and Sharp.
+                        </li>
+
+                    </ul>
+
+                    <div class="project-links">
+
+                        <a href="https://github.com/chandrashekar271004/modern-invoicing-system"
+                            target="_blank"
+                            rel="noopener noreferrer">
+                            GitHub ↗
+                        </a>
+
+                        <a href="https://modern-invoicing-system-ten.vercel.app/"
+                            target="_blank"
+                            rel="noopener noreferrer">
+                            Live Demo ↗
+                        </a>
+
+                    </div>
+
+                </article>
+
             </div>
 
-            <div class="card">
-                <h3>Backend</h3>
-                <p>Node.js, Express.js, REST APIs, JWT Authentication, RBAC</p>
+        </section>
+
+
+        <!-- ==================== EDUCATION ==================== -->
+
+        <section id="education" class="section dark">
+
+            <div class="section-heading">
+
+                <p class="section-label">EDUCATION</p>
+
+                <h2>Academic Background</h2>
+
             </div>
 
-            <div class="card">
-                <h3>Databases</h3>
-                <p>MongoDB, MySQL</p>
+            <div class="education-card reveal">
+
+                <div>
+
+                    <span class="education-year">
+                        2022 — 2026
+                    </span>
+
+                    <h3>
+                        B.Tech in Computer Science Engineering
+                    </h3>
+
+                    <p>
+                        Malla Reddy College of Engineering and Technology
+                    </p>
+
+                </div>
+
+                <div class="cgpa">
+
+                    <span>CGPA</span>
+
+                    <strong>
+                        7.65
+                    </strong>
+
+                </div>
+
             </div>
 
-            <div class="card">
-                <h3>Tools & Platforms</h3>
-                <p>Git, GitHub, Postman, Swagger, Docker, Render, MongoDB Atlas</p>
+        </section>
+
+
+        <!-- ==================== CERTIFICATIONS ==================== -->
+
+        <section class="section">
+
+            <div class="section-heading">
+
+                <p class="section-label">CERTIFICATIONS</p>
+
+                <h2>Professional Learning</h2>
+
             </div>
 
-            <div class="card">
-                <h3>CS Fundamentals</h3>
-                <p>DSA, OOP, DBMS, Operating Systems, Computer Networks</p>
+            <div class="certifications-grid">
+
+                <div class="cert-card reveal">
+                    <strong>Deloitte</strong>
+                    <span>Cyber Job Simulation</span>
+                </div>
+
+                <div class="cert-card reveal">
+                    <strong>Deloitte</strong>
+                    <span>Data Analytics Job Simulation</span>
+                </div>
+
+                <div class="cert-card reveal">
+                    <strong>Quantium</strong>
+                    <span>Software Engineering Job Simulation</span>
+                </div>
+
             </div>
 
-        </div>
+        </section>
 
-    </section>
 
-    <!-- Projects -->
-    <section id="projects" class="section">
+        <!-- ==================== CONTACT ==================== -->
 
-        <h2 class="section-title">Projects</h2>
+        <section id="contact" class="section contact-section">
 
-        <div class="grid">
+            <div class="contact-content">
 
-            <!-- Ecommerce -->
-            <div class="card project-card">
-
-                <h3>E-Commerce Backend System</h3>
-
-                <p class="tech-stack">
-                    Node.js • Express.js • MongoDB • JWT
+                <p class="section-label">
+                    GET IN TOUCH
                 </p>
 
-                <ul>
-                    <li>Built RESTful APIs for authentication, cart, products, and orders.</li>
-                    <li>Implemented JWT authentication and role-based authorization.</li>
-                    <li>Added filtering, pagination, stock management, and validation.</li>
-                    <li>Designed production-style MVC backend architecture.</li>
-                    <li>Integrated MongoDB Atlas and deployed on Render.</li>
-                    <li>Documented APIs using Swagger and Postman.</li>
-                </ul>
+                <h2>
+                    Let's build something useful.
+                </h2>
 
-                <div class="project-links">
+                <p>
+                    I'm currently looking for backend and software
+                    engineering opportunities where I can contribute
+                    to real-world systems and continue growing as
+                    a backend engineer.
+                </p>
 
-                    <a href="https://github.com/chandrashekar271004/ecommerce-backend-api"
-                        target="_blank">
+                <a href="mailto:chandrashekar271004@gmail.com"
+                    class="btn primary-btn">
+                    Send Me an Email
+                </a>
+
+                <div class="contact-details">
+
+                    <a href="mailto:chandrashekar271004@gmail.com">
+                        chandrashekar271004@gmail.com
+                    </a>
+
+                    <a href="tel:+919121405966">
+                        +91 9121405966
+                    </a>
+
+                    <a href="https://github.com/chandrashekar271004"
+                        target="_blank"
+                        rel="noopener noreferrer">
                         GitHub
                     </a>
 
-                    <a href="https://ecommerce-backend-q0jj.onrender.com"
-                        target="_blank">
-                        Live API
+                    <a href="https://www.linkedin.com/in/chandrashekar-bonthu-483546409/"
+                        target="_blank"
+                        rel="noopener noreferrer">
+                        LinkedIn
                     </a>
 
                 </div>
 
             </div>
 
-            <!-- Voting System -->
-            <div class="card project-card">
+        </section>
 
-                <h3>Secure Voting System</h3>
+    </main>
 
-                <p class="tech-stack">
-                    MERN Stack • JWT Authentication
-                </p>
 
-                <ul>
-                    <li>Built secure full-stack voting platform.</li>
-                    <li>Implemented one-user-one-vote logic.</li>
-                    <li>Developed protected backend APIs with RBAC.</li>
-                    <li>Integrated analytics and result visualization.</li>
-                </ul>
+    <!-- ==================== FOOTER ==================== -->
 
-                <div class="project-links">
-
-                    <a href="https://github.com/chandrashekar271004/Secure-Voting-System-using-JWT-Authentication.git"
-                        target="_blank">
-                        GitHub
-                    </a>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </section>
-
-    <!-- Achievements -->
-    <section id="achievements" class="section dark">
-
-        <h2 class="section-title">Achievements</h2>
-
-        <div class="grid">
-
-            <div class="card">
-                <h3>200+ DSA Problems</h3>
-                <p>
-                    Solved problems on arrays, linked lists,
-                    stacks, queues, recursion, and hashing.
-                </p>
-            </div>
-
-            <div class="card">
-                <h3>15+ REST APIs</h3>
-                <p>
-                    Developed real-world backend APIs with
-                    authentication and authorization.
-                </p>
-            </div>
-
-            <div class="card">
-                <h3>Hackathons & Coding Contests</h3>
-                <p>
-                    Participated in technical competitions
-                    and collaborative coding events.
-                </p>
-            </div>
-
-        </div>
-
-    </section>
-
-    <!-- Education -->
-    <section id="education" class="section">
-
-        <h2 class="section-title">Education</h2>
-
-        <div class="card education-card">
-
-            <h3>B.Tech in Computer Science Engineering</h3>
-
-            <p>MRCET, Hyderabad</p>
-
-            <p>2022 - 2026</p>
-
-            <p>CGPA: 7.54</p>
-
-        </div>
-
-    </section>
-
-    <!-- Contact -->
-    <section id="contact" class="section dark">
-
-        <h2 class="section-title">Contact</h2>
-
-        <div class="card contact-card">
-
-            <p>📍 Hyderabad, Telangana</p>
-
-            <p>
-                📧
-                <a href="mailto:chandrashekar271004@gmail.com">
-                    chandrashekar271004@gmail.com
-                </a>
-            </p>
-
-            <p>
-                📞
-                <a href="tel:+919121405966">
-                    +91 9121405966
-                </a>
-            </p>
-
-            <p>
-                💻
-                <a href="https://github.com/chandrashekar271004"
-                    target="_blank">
-                    GitHub Profile
-                </a>
-            </p>
-
-        </div>
-
-    </section>
-
-    <!-- Footer -->
     <footer>
-        <p>© 2026 Bonthu Chandrashekar • Backend Developer</p>
+
+        <p>
+            © 2026 Bonthu Chandrashekar
+        </p>
+
+        <p>
+            Backend Developer • Node.js • TypeScript • Python
+        </p>
+
     </footer>
+
 
     <script src="script.js"></script>
 
